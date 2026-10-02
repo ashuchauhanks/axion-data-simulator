@@ -82,6 +82,6 @@ stages:
         manifests: |
           manifest/deployment.yml
           manifest/service.yml
-        containers: 'acrashudevka.azurecr.io/axion-ui:$(Build.BuildId)'
+        containers: 'acrashudevka.azurecr.io/axion-data-simulator:$(Build.BuildId)'
 
 
