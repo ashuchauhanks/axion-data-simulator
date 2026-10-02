@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: axion-data-simulator
-        image: acrashudevka.azurecr.io/axion-data-simulator:latest
+        image: acrashudevka.azurecr.io/axion-data-simulator:$(Build.BuildId)
         imagePullPolicy: Always
         # ports:
         # - containerPort: 8000
