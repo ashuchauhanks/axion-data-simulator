@@ -1,0 +1,12 @@
+# apiVersion:
+# kind:
+# metadata:
+#   name: axion-data-simulator
+#   namespace: axion
+# spec:
+#   selector:
+#     app: axion-data-simulator
+  
+#   ports:
+#   - port: 8000
+#     targetPort: 8000

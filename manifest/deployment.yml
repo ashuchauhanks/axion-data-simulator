@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axion-data-simulator
+  namespace: axion
+  labels:
+    app: axion-data-simulator
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: axion-data-simulator
+  template:
+    metadata:
+      labels:
+        app: axion-data-simulator
+    spec:
+      containers:
+      - name: axion-data-simulator
+        image: acrashudevka.azurecr.io/axion-data-simulator:latest
+        imagePullPolicy: Always
+        # ports:
+        # - containerPort: 8000
+        # resources:
+        #   requests:
+        #     cpu: "100m"
+        #     memory: "128Mi"
+        #   limits:
+        #     cpu: "500m"
+        #     memory: "512Mi"
